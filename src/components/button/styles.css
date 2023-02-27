@@ -1,0 +1,26 @@
+.full {
+  width: 303px;
+  height: 39px;
+  background: linear-gradient(96.45deg, #377EF7 0%, #3C80F1 122.84%);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+.empty {
+  width: 303px;
+  height: 39px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 100%;
+  text-align: center;
+  background-color: #FFFFFF;
+  color: #3B7FF4;
+  border: none;
+  cursor: pointer;
+}

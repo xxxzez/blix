@@ -1,0 +1,31 @@
+.point {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  margin-right: 16px;
+}
+
+.description {
+
+}
+
+.pointTitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  margin-bottom: 4px;
+}
+
+.pointSubtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #929292;
+}
