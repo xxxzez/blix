@@ -1,24 +1,12 @@
 import React, { FC } from 'react'
+import { FormProps } from '../../types/form'
 import { Button } from '../button/Button'
 import { Point } from '../point/Point'
 import './styles.css'
 
-type PointType = {
-  title: string
-  subtitle: string
-  img: ImageData
-}
-
-type FormProps = {
-  title: string
-  subtitle: string
-  points: Array<PointType>
-  okText: string
-  laterText: string
-}
-
 export const Form: FC<FormProps> = ({
-  title,
+  title1,
+  title2,
   subtitle,
   points,
   okText,
@@ -26,7 +14,10 @@ export const Form: FC<FormProps> = ({
 }) => {
   return (
     <div className="form">
-      <div className="title">{title}</div>
+      <div className="title1">
+        {title1}
+        <span className="title2">{title2}</span>
+      </div>
       <div className="subtitle">{subtitle}</div>
       {points.map((point: any, i: any) => (
         <Point point={point} key={i} />

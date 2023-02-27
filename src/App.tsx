@@ -6,7 +6,8 @@ function App() {
   return (
     <div className="container">
       <Form
-        title="My title"
+        title1="My "
+        title2="Title"
         subtitle="Here is my cool subtitle. This is something that everyone likes"
         points={Points}
         okText="Let’s go!"
