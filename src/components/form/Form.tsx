@@ -2,6 +2,8 @@ import React, { FC } from 'react'
 import { FormProps } from '../../types/form'
 import { Button } from '../button/Button'
 import { Point } from '../point/Point'
+import closeIcon from '../../assets/icons/closeIcon.png'
+
 import './styles.css'
 
 export const Form: FC<FormProps> = ({
@@ -24,6 +26,9 @@ export const Form: FC<FormProps> = ({
       ))}
       <Button type="full" text={okText} />
       <Button type="empty" text={laterText} />
+      <div className="closeIcon">
+        <img src={closeIcon} alt="Close" />
+      </div>
     </div>
   )
 }

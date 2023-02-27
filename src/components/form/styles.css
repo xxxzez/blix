@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 300px;
   padding: 80px 25px auto;
+  position: relative;
 }
 
 .title1 {
@@ -26,4 +27,11 @@
   line-height: 100%;
   text-align: center;
   margin-bottom: 60px;
+}
+
+.closeIcon {
+  position: absolute;
+  top: -45px;
+  left: -25px;
+  cursor: pointer;
 }
