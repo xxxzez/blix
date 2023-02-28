@@ -1,20 +1,31 @@
-import { Form } from './components/form'
 import './App.css'
 import { Points } from './constants/points'
+import { useState } from 'react'
+import { Form } from './components/form/Form'
+import { ThemeContext } from './hooks/theme/useTheme'
 
-function App() {
+export const App = () => {
+  const [theme, setTheme] = useState<'light' | 'dark'>('light')
+
+  const toggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light')
+  }
+
   return (
-    <div className="container">
-      <Form
-        title1="My "
-        title2="Title"
-        subtitle="Here is my cool subtitle. This is something that everyone likes"
-        points={Points}
-        okText="Let’s go!"
-        laterText="Later"
-      />
-    </div>
+    <ThemeContext.Provider value={theme}>
+      <div className={'container-' + theme}>
+        <Form
+          titleFirst="My "
+          titleSecond="Title"
+          subtitle="Here is my cool subtitle. This is something that everyone likes"
+          points={Points}
+          okText="Let’s go!"
+          laterText="Later"
+        />
+        <button onClick={toggleTheme} className={'toggler-' + theme}>
+          {theme === 'light' ? 'dark' : 'light'}
+        </button>
+      </div>
+    </ThemeContext.Provider>
   )
 }
-
-export default App

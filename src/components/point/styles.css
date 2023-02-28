@@ -13,16 +13,31 @@
   text-align: left;
 }
 
-.pointTitle {
+.pointTitle-light {
   font-weight: 600;
   font-size: 20px;
   line-height: 100%;
   margin-bottom: 4px;
 }
 
-.pointSubtitle {
+.pointTitle-dark {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+.pointSubtitle-light {
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
   color: #929292;
+}
+
+.pointSubtitle-dark {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #d5d2d2;
 }

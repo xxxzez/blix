@@ -1,5 +1,19 @@
+import { FC } from 'react'
+import { useTheme } from '../../hooks/theme/useTheme'
 import './styles.css'
 
-export function Button({ type, text }: any) {
-  return <button className={type}>{text}</button>
+type ButtonProps = {
+  type: string
+  text: string
+  onClick?: () => void
+}
+
+export const Button: FC<ButtonProps> = ({ type, text, onClick }) => {
+  const theme = useTheme()
+
+  return (
+    <button className={`${type}-${theme}`} onClick={onClick}>
+      {text}
+    </button>
+  )
 }

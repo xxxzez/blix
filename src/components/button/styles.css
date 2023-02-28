@@ -1,4 +1,4 @@
-.full {
+.full-light {
   width: 303px;
   height: 39px;
   background: linear-gradient(96.45deg, #377EF7 0%, #3C80F1 122.84%);
@@ -7,19 +7,46 @@
   font-size: 15px;
   line-height: 100%;
   text-align: center;
-  color: #FFFFFF;
+  color: #fff;
   border: none;
   cursor: pointer;
 }
 
-.empty {
+.full-dark {
+  width: 303px;
+  height: 39px;
+  background: linear-gradient(96.45deg, #13336b 0%, #06265a 122.84%);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 100%;
+  text-align: center;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.empty-light {
   width: 303px;
   height: 39px;
   font-weight: 600;
   font-size: 15px;
   line-height: 100%;
   text-align: center;
-  background-color: #FFFFFF;
+  background-color: #fff;
+  color: #3B7FF4;
+  border: none;
+  cursor: pointer;
+}
+
+.empty-dark {
+  width: 303px;
+  height: 39px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 100%;
+  text-align: center;
+  background-color: rgb(42, 41, 41);
   color: #3B7FF4;
   border: none;
   cursor: pointer;

@@ -1,7 +1,51 @@
-.container {
+.container-light {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   width: 100vw;
+}
+
+.container-dark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(42, 41, 41);
+}
+
+.toggler-light {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 90px;
+  height: 25px;
+  background: #525355;
+  border-radius: 4px;
+  font-size: 15px;
+  line-height: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+
+}
+
+.toggler-dark {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 90px;
+  height: 25px;
+  background: #3B7FF4;
+  border-radius: 4px;
+  font-size: 15px;
+  line-height: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
 }
