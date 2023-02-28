@@ -1,10 +1,10 @@
+import { FC, useState } from 'react'
 import './App.css'
 import { Points } from './constants/points'
-import { useState } from 'react'
 import { Form } from './components/form/Form'
 import { ThemeContext } from './hooks/theme/useTheme'
 
-export const App = () => {
+export const App: FC = () => {
   const [theme, setTheme] = useState<'light' | 'dark'>('light')
 
   const toggleTheme = () => {

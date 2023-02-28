@@ -24,7 +24,7 @@ export const Points = [
   {
     title: 'Point 4',
     subtitle:
-      'but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages',
+      'but also the leap into electronic typesetting, remaining essentially unchanged. It was popularized in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages',
     img: Point4,
   },
   {
@@ -47,7 +47,7 @@ export const Points = [
   {
     title: 'Point 4',
     subtitle:
-      'but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages',
+      'but also the leap into electronic typesetting, remaining essentially unchanged. It was popularized in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages',
     img: Point4,
   },
 ]

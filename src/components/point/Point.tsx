@@ -6,6 +6,7 @@ import './styles.css'
 type PointProps = {
   point: PointType
 }
+
 export const Point: FC<PointProps> = ({ point }) => {
   const { title, subtitle, img } = point
   const theme = useTheme()
